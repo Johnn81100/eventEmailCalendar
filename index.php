@@ -10,10 +10,10 @@
     //routeur
     switch ($path) {
         case '/event/':
-            include './controller/ctrl_send_email.php';
+            include './view/view_send_email.php';
             break;
-        case '/blog/test':
-            include './test.php';
+        case '/event/requete':
+            include './controller/ctrl_send_email.php';
             break;
         default:
             include './error.php';
