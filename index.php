@@ -13,7 +13,7 @@
             include './view/view_send_email.php';
             break;
         case '/event/requete':
-            include './controller/ctrl_send_email.php';
+            include './app/controller/EmailControlleur.php';
             break;
         default:
             include './error.php';
