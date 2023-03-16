@@ -4,4 +4,4 @@ RewriteEngine On
 RewriteBase /eventEmailCalendar
 # si ce n'est pas un répertoire
 # Si ce n'est pas un fichier
-RewriteRule ^(.+)$ index.php [QSA,L]
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php [QSA,L]
