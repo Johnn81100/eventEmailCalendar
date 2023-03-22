@@ -83,12 +83,11 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/app.html">app</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    CleanInput
+    Autoloader
 
     
             <div class="phpdocumentor-element__package">
@@ -102,9 +101,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="utils/CleanInput.php"><a href="files/utils-cleaninput.html"><abbr title="utils/CleanInput.php">CleanInput.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="utils/Autoloader.php"><a href="files/utils-autoloader.html"><abbr title="utils/Autoloader.php">Autoloader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5</span>
+    <span class="phpdocumentor-element-found-in__line">3</span>
 
     </aside>
 
@@ -125,11 +124,18 @@
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/app-CleanInput.html#method_cleanInput">cleanInput()</a>
+    <a href="classes/Autoloader.html#method_autoload">autoload()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Passe la variable $input  et la nettoie.</dd>
+<dd>autoload  permet d&#039;appeler la classe  qu&#039;on va instancier</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Autoloader.html#method_register">register()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>register permet d&#039;utilisier la fonction   spl_autoload_register, dans notre class Autoloader et d&#039;utilisier la fonction autoload</dd>
 
         </dl>
 
@@ -142,7 +148,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/app-CleanInput.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Autoloader.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -150,33 +156,28 @@
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_cleanInput">
-        cleanInput()
-        <a href="classes/app-CleanInput.html#method_cleanInput" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_autoload">
+        autoload()
+        <a href="classes/Autoloader.html#method_autoload" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="utils/CleanInput.php"><a href="files/utils-cleaninput.html"><abbr title="utils/CleanInput.php">CleanInput.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="utils/Autoloader.php"><a href="files/utils-autoloader.html"><abbr title="utils/Autoloader.php">Autoloader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Passe la variable $input  et la nettoie.</p>
+        <p class="phpdocumentor-summary">autoload  permet d&#039;appeler la classe  qu&#039;on va instancier</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">cleanInput</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">autoload</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class_name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"><p>fonction htmlspecialchars : transforme les caractéres spéciaux  en string
-fonction strip_tags :  retourne que les strings
-fonction trim : Supprime les espaces (ou d'autres caractères) en début et fin de chaîne
-Suppression  de tous les caractéres de contrôle ASCII (de o à 31 inclusif).</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$input</span>
+                <span class="phpdocumentor-signature__argument__name">$class_name</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -188,6 +189,39 @@ Suppression  de tous les caractéres de contrôle ASCII (de o à 31 inclusif).</
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_register">
+        register()
+        <a href="classes/Autoloader.html#method_register" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="utils/Autoloader.php"><a href="files/utils-autoloader.html"><abbr title="utils/Autoloader.php">Autoloader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">register permet d&#039;utilisier la fonction   spl_autoload_register, dans notre class Autoloader et d&#039;utilisier la fonction autoload</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">register</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -270,7 +304,7 @@ Suppression  de tous les caractéres de contrôle ASCII (de o à 31 inclusif).</
 </section>
             </div>
         </div>
-        <a href="classes/app-CleanInput.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Autoloader.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

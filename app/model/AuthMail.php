@@ -57,7 +57,7 @@
       {
             $this->login = $login;
 
-            return $this;
+            return $this->login;
       }
 
       /**

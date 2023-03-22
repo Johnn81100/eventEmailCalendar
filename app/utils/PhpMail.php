@@ -4,6 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
+require './smtp.php';
 
  //Load Composer's autoloader
  
@@ -67,3 +68,4 @@ require 'vendor/autoload.php';
         }
 }
 ?>
+

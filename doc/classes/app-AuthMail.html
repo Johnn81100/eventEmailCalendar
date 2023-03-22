@@ -102,14 +102,16 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="utils/AuthMail.php"><a href="files/utils-authmail.html"><abbr title="utils/AuthMail.php">AuthMail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/AuthMail.php"><a href="files/model-authmail.html"><abbr title="model/AuthMail.php">AuthMail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
-        
-    <section class="phpdocumentor-description"></section>
+            <p class="phpdocumentor-summary">Classe  Authentification.</p>
+
+    <section class="phpdocumentor-description"><p>variable contenant le login le mdp  de l'expéditaire et le login de la personne qui reçoit le message .</p>
+</section>
 
 
 
@@ -124,21 +126,21 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/app-AuthMail.html#property_login">$login</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/app-AuthMail.html#property_mdp">$mdp</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/app-AuthMail.html#property_recipientLogin">$recipientLogin</a>
     <span>
                         &nbsp;: string            </span>
@@ -150,21 +152,42 @@
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Récupérer le login de la messagerie qui expédie  le mail.</dd>
+<dd>Récupérer le login de l&#039;expéditeur.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/app-AuthMail.html#method_getMdp">getMdp()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Récupérer le mdp  de la messagerie qui expédie  le mail.</dd>
+<dd>Récupérer le mdp  de l&#039;expéditeur.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/app-AuthMail.html#method_getRecipientLogin">getRecipientLogin()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Récupérer le mail  qui va recevoir  le mail.</dd>
+<dd>Récupérer le mail du destinataire.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/app-AuthMail.html#method_setLogin">setLogin()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Ajoute  l&#039;expéditeur du mail.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/app-AuthMail.html#method_setMdp">setMdp()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Ajoute  le mdp de l&#039;expéditeur</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/app-AuthMail.html#method_setRecipientLogin">setRecipientLogin()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Ajoute  le destinataire du mail.</dd>
 
         </dl>
 
@@ -182,7 +205,7 @@
         class="
             phpdocumentor-element
             -property
-            -private
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_login">
@@ -192,18 +215,18 @@
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="utils/AuthMail.php"><a href="files/utils-authmail.html"><abbr title="utils/AuthMail.php">AuthMail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/AuthMail.php"><a href="files/model-authmail.html"><abbr title="model/AuthMail.php">AuthMail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$login</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;gau.jonathan@gmail.com&#039;</span></code>
+    </code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -216,7 +239,7 @@
         class="
             phpdocumentor-element
             -property
-            -private
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_mdp">
@@ -226,18 +249,18 @@
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="utils/AuthMail.php"><a href="files/utils-authmail.html"><abbr title="utils/AuthMail.php">AuthMail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/AuthMail.php"><a href="files/model-authmail.html"><abbr title="model/AuthMail.php">AuthMail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">8</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$mdp</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;vkitledysjwskxnc&#039;</span></code>
+    </code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -250,7 +273,7 @@
         class="
             phpdocumentor-element
             -property
-            -private
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_recipientLogin">
@@ -260,18 +283,18 @@
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="utils/AuthMail.php"><a href="files/utils-authmail.html"><abbr title="utils/AuthMail.php">AuthMail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/AuthMail.php"><a href="files/model-authmail.html"><abbr title="model/AuthMail.php">AuthMail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$recipientLogin</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;gau.jonathan@gmail.com&#039;</span></code>
+    </code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -298,13 +321,13 @@
         <a href="classes/app-AuthMail.html#method_getLogin" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="utils/AuthMail.php"><a href="files/utils-authmail.html"><abbr title="utils/AuthMail.php">AuthMail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/AuthMail.php"><a href="files/model-authmail.html"><abbr title="model/AuthMail.php">AuthMail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Récupérer le login de la messagerie qui expédie  le mail.</p>
+        <p class="phpdocumentor-summary">Récupérer le login de l&#039;expéditeur.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -331,13 +354,13 @@
         <a href="classes/app-AuthMail.html#method_getMdp" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="utils/AuthMail.php"><a href="files/utils-authmail.html"><abbr title="utils/AuthMail.php">AuthMail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/AuthMail.php"><a href="files/model-authmail.html"><abbr title="model/AuthMail.php">AuthMail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Récupérer le mdp  de la messagerie qui expédie  le mail.</p>
+        <p class="phpdocumentor-summary">Récupérer le mdp  de l&#039;expéditeur.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -364,13 +387,13 @@
         <a href="classes/app-AuthMail.html#method_getRecipientLogin" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="utils/AuthMail.php"><a href="files/utils-authmail.html"><abbr title="utils/AuthMail.php">AuthMail.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/AuthMail.php"><a href="files/model-authmail.html"><abbr title="model/AuthMail.php">AuthMail.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Récupérer le mail  qui va recevoir  le mail.</p>
+        <p class="phpdocumentor-summary">Récupérer le mail du destinataire.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -378,6 +401,138 @@
 
     
     
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setLogin">
+        setLogin()
+        <a href="classes/app-AuthMail.html#method_setLogin" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="model/AuthMail.php"><a href="files/model-authmail.html"><abbr title="model/AuthMail.php">AuthMail.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Ajoute  l&#039;expéditeur du mail.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setLogin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$login</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$login</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setMdp">
+        setMdp()
+        <a href="classes/app-AuthMail.html#method_setMdp" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="model/AuthMail.php"><a href="files/model-authmail.html"><abbr title="model/AuthMail.php">AuthMail.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Ajoute  le mdp de l&#039;expéditeur</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setMdp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mdp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$mdp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setRecipientLogin">
+        setRecipientLogin()
+        <a href="classes/app-AuthMail.html#method_setRecipientLogin" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="model/AuthMail.php"><a href="files/model-authmail.html"><abbr title="model/AuthMail.php">AuthMail.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Ajoute  le destinataire du mail.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setRecipientLogin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$recipientLogin</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$recipientLogin</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>

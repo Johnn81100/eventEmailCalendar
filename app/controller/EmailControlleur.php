@@ -1,7 +1,8 @@
 <?php
 
-use app\CleanInput;
 namespace app;
+require './smtp.php';
+use app\CleanInput;
 
    class EmailControlleur extends PhpMail {
 
@@ -12,7 +13,8 @@ namespace app;
     
     public function  sendMail():void
     {
-        
+       
+        print_r($this->getMdp());
         if(isset($_POST['mail']))
         {
             $mailUtilisateur = CleanInput::cleanInput(($_POST["mail"])); 

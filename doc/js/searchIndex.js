@@ -1,25 +1,65 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\app\\CleanInput",
+            "name": "CleanInput",
+            "summary": "",
+            "url": "classes/app-CleanInput.html"
+        },                {
+            "fqsen": "\\app\\CleanInput\u003A\u003AcleanInput\u0028\u0029",
+            "name": "cleanInput",
+            "summary": "Passe\u0020la\u0020variable\u0020\u0024input\u0020\u0020et\u0020la\u0020nettoie.",
+            "url": "classes/app-CleanInput.html#method_cleanInput"
+        },                {
+            "fqsen": "\\app\\PhpMail",
+            "name": "PhpMail",
+            "summary": "Classe\u0020\u0020Authentification.",
+            "url": "classes/app-PhpMail.html"
+        },                {
+            "fqsen": "\\app\\PhpMail\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Affecte\u0020les\u0020variables\u0020login\u0020mdp\u0020recipientLogin\u0020depuis\u0020la\u0020\u0020class\u0020AuthMail.",
+            "url": "classes/app-PhpMail.html#method___construct"
+        },                {
+            "fqsen": "\\app\\PhpMail\u003A\u003ASendemail\u0028\u0029",
+            "name": "Sendemail",
+            "summary": "Envoie\u0020un\u0020email",
+            "url": "classes/app-PhpMail.html#method_Sendemail"
+        },                {
             "fqsen": "\\app\\AuthMail",
             "name": "AuthMail",
-            "summary": "",
+            "summary": "Classe\u0020\u0020Authentification.",
             "url": "classes/app-AuthMail.html"
-        },                {
-            "fqsen": "\\app\\AuthMail\u003A\u003AgetLogin\u0028\u0029",
-            "name": "getLogin",
-            "summary": "R\u00E9cup\u00E9rer\u0020le\u0020login\u0020de\u0020la\u0020messagerie\u0020qui\u0020exp\u00E9die\u0020\u0020le\u0020mail.",
-            "url": "classes/app-AuthMail.html#method_getLogin"
-        },                {
-            "fqsen": "\\app\\AuthMail\u003A\u003AgetMdp\u0028\u0029",
-            "name": "getMdp",
-            "summary": "R\u00E9cup\u00E9rer\u0020le\u0020mdp\u0020\u0020de\u0020la\u0020messagerie\u0020qui\u0020exp\u00E9die\u0020\u0020le\u0020mail.",
-            "url": "classes/app-AuthMail.html#method_getMdp"
         },                {
             "fqsen": "\\app\\AuthMail\u003A\u003AgetRecipientLogin\u0028\u0029",
             "name": "getRecipientLogin",
-            "summary": "R\u00E9cup\u00E9rer\u0020le\u0020mail\u0020\u0020qui\u0020va\u0020recevoir\u0020\u0020le\u0020mail.",
+            "summary": "R\u00E9cup\u00E9rer\u0020le\u0020mail\u0020du\u0020destinataire.",
             "url": "classes/app-AuthMail.html#method_getRecipientLogin"
+        },                {
+            "fqsen": "\\app\\AuthMail\u003A\u003AsetRecipientLogin\u0028\u0029",
+            "name": "setRecipientLogin",
+            "summary": "Ajoute\u0020\u0020le\u0020destinataire\u0020du\u0020mail.",
+            "url": "classes/app-AuthMail.html#method_setRecipientLogin"
+        },                {
+            "fqsen": "\\app\\AuthMail\u003A\u003AgetLogin\u0028\u0029",
+            "name": "getLogin",
+            "summary": "R\u00E9cup\u00E9rer\u0020le\u0020login\u0020de\u0020l\u0027exp\u00E9diteur.",
+            "url": "classes/app-AuthMail.html#method_getLogin"
+        },                {
+            "fqsen": "\\app\\AuthMail\u003A\u003AsetLogin\u0028\u0029",
+            "name": "setLogin",
+            "summary": "Ajoute\u0020\u0020l\u0027exp\u00E9diteur\u0020du\u0020mail.",
+            "url": "classes/app-AuthMail.html#method_setLogin"
+        },                {
+            "fqsen": "\\app\\AuthMail\u003A\u003AgetMdp\u0028\u0029",
+            "name": "getMdp",
+            "summary": "R\u00E9cup\u00E9rer\u0020le\u0020mdp\u0020\u0020de\u0020l\u0027exp\u00E9diteur.",
+            "url": "classes/app-AuthMail.html#method_getMdp"
+        },                {
+            "fqsen": "\\app\\AuthMail\u003A\u003AsetMdp\u0028\u0029",
+            "name": "setMdp",
+            "summary": "Ajoute\u0020\u0020le\u0020mdp\u0020de\u0020l\u0027exp\u00E9diteur",
+            "url": "classes/app-AuthMail.html#method_setMdp"
         },                {
             "fqsen": "\\app\\AuthMail\u003A\u003A\u0024login",
             "name": "login",
@@ -36,45 +76,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/app-AuthMail.html#property_recipientLogin"
         },                {
-            "fqsen": "\\app\\CleanInput",
-            "name": "CleanInput",
+            "fqsen": "\\Autoloader",
+            "name": "Autoloader",
             "summary": "",
-            "url": "classes/app-CleanInput.html"
+            "url": "classes/Autoloader.html"
         },                {
-            "fqsen": "\\app\\CleanInput\u003A\u003AcleanInput\u0028\u0029",
-            "name": "cleanInput",
-            "summary": "Passe\u0020la\u0020variable\u0020\u0024input\u0020\u0020et\u0020la\u0020nettoie.",
-            "url": "classes/app-CleanInput.html#method_cleanInput"
+            "fqsen": "\\Autoloader\u003A\u003Aautoload\u0028\u0029",
+            "name": "autoload",
+            "summary": "autoload\u0020\u0020permet\u0020d\u0027appeler\u0020la\u0020classe\u0020\u0020qu\u0027on\u0020va\u0020instancier",
+            "url": "classes/Autoloader.html#method_autoload"
         },                {
-            "fqsen": "\\app\\PhpMail",
-            "name": "PhpMail",
-            "summary": "",
-            "url": "classes/app-PhpMail.html"
-        },                {
-            "fqsen": "\\app\\PhpMail\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Affecte\u0020les\u0020variables\u0020login\u0020mdp\u0020recipientLogin\u0020depuis\u0020la\u0020\u0020class\u0020AuthMail.",
-            "url": "classes/app-PhpMail.html#method___construct"
-        },                {
-            "fqsen": "\\app\\PhpMail\u003A\u003ASendemail\u0028\u0029",
-            "name": "Sendemail",
-            "summary": "Envoie\u0020un\u0020email",
-            "url": "classes/app-PhpMail.html#method_Sendemail"
-        },                {
-            "fqsen": "\\app\\PhpMail\u003A\u003A\u0024login",
-            "name": "login",
-            "summary": "",
-            "url": "classes/app-PhpMail.html#property_login"
-        },                {
-            "fqsen": "\\app\\PhpMail\u003A\u003A\u0024mdp",
-            "name": "mdp",
-            "summary": "",
-            "url": "classes/app-PhpMail.html#property_mdp"
-        },                {
-            "fqsen": "\\app\\PhpMail\u003A\u003A\u0024recipientLogin",
-            "name": "recipientLogin",
-            "summary": "",
-            "url": "classes/app-PhpMail.html#property_recipientLogin"
+            "fqsen": "\\Autoloader\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "register\u0020permet\u0020d\u0027utilisier\u0020la\u0020fonction\u0020\u0020\u0020spl_autoload_register,\u0020dans\u0020notre\u0020class\u0020Autoloader\u0020et\u0020d\u0027utilisier\u0020la\u0020fonction\u0020autoload",
+            "url": "classes/Autoloader.html#method_register"
         },                {
             "fqsen": "\\",
             "name": "\\",

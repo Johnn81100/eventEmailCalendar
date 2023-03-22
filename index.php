@@ -1,6 +1,18 @@
 <?php
-    include './utils/connectBdd.php';
-    include './utils/functions.php';
+    
+    // use app\AuthMail;
+    // use app\PhpMail;
+    use app\EmailControlleur;
+    require_once './app/model/AuthMail.php';
+    require_once './app/utils/PhpMail.php';
+    require_once './app/controller/EmailControlleur.php';
+   
+    // include ' ./app/utils/connectBdd.php';
+    // include './app/model/AuthMail.php';
+    // include  './app/controller/EmailControlleur.php';
+
+    $controlleurEmail= new EmailControlleur();
+
     //utilisation de session_start(pour gérer la connexion au serveur)
     session_start();
     //Analyse de l'URL avec parse_url() et retourne ses composants
@@ -10,10 +22,10 @@
     //routeur
     switch ($path) {
         case '/event/':
-            include './view/view_send_email.php';
+            include './app/view/view_send_email.php';
             break;
         case '/event/requete':
-            include './app/controller/EmailControlleur.php';
+            $controlleurEmail->sendMail();
             break;
         default:
             include './error.php';
